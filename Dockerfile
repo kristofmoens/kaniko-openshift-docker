@@ -1,5 +1,6 @@
 FROM gcr.io/kaniko-project/executor:v1.5.2
 
+# Adapt dockerfile
 FROM alpine
 COPY --from=0 /kaniko/ /kaniko
 
