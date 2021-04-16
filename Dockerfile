@@ -10,6 +10,6 @@ RUN mkdir -p /cache && \
     chgrp -R 0 /kaniko /var /cache /etc /lib && \
     chmod -R g=u /kaniko /var /cache /etc /lib
 
-COPY uid_entrypoint /
-ENTRYPOINT ["/uid_entrypoint"]
+#COPY uid_entrypoint /
+#ENTRYPOINT ["/uid_entrypoint"]
 USER 1001
